@@ -98,7 +98,7 @@
 }
 .ex-10-icon {
   font-size: 60px;
-  animation: loading 1s infinite;
+  animation: loading 1s infinite linear;
   transform: rotate(90deg);
 }
 
@@ -113,6 +113,23 @@
 
 .ex-11-icon {
   font-size: 60px;
+}
+
+.ex-11-icon:hover {
+  font-size: 60px;
+  animation: loading-2 1s infinite linear;
+}
+
+@keyframes loading-2 {
+  0% {
+    transform: rotate(0turn);
+  }
+  80% {
+    transform: rotate(0.9turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
 }
 
 .ex-12-button,
